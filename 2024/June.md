@@ -2,20 +2,24 @@
 
 - ewCN（上海国际嵌入式展）
 
-### 郑景坤老师团队
+## 技术报告
 
-## 任务1 -> PR 审核
+- 7.3 驱动 RISC-V 未来的 RuyiSDK
 
-[PR 审核](https://github.com/KevinMX/support-matrix/pull/24) -> 任务描述：审核文档翻译情况
-[PR 审核](https://github.com/KevinMX/support-matrix/pull/26) -> 任务描述：审核相关测试文档
-[PR 审核](https://github.com/KevinMX/support-matrix/pull/27#pullrequestreview-2136008533) -> 任务描述：审核文档翻译情况
+## 郑景坤老师团队
 
-## 任务 2 -> 测试任务
+### 任务1 -> PR 审核
+
+- [PR 审核](https://github.com/KevinMX/support-matrix/pull/24) -> 任务描述：审核文档翻译情况
+- [PR 审核](https://github.com/KevinMX/support-matrix/pull/26) -> 任务描述：审核相关测试文档
+- [PR 审核](https://github.com/KevinMX/support-matrix/pull/27#pullrequestreview-2136008533) -> 任务描述：审核文档翻译情况
+
+### 任务 2 -> 测试任务
 
 [相关 PR](https://github.com/KevinMX/support-matrix/pull/25) -> 任务描述：完成任务"[调研&测试] Ubuntu 24.04 LTS"
 1. 完成  Sipeed LicheeRV Dock 上对于 Ubuntu 24.04 LTS 的安装验证（测试）
 2. 完成  Sipeed LicheeRV Dockk 上对于 Ubuntu 24.04 LTS 的安装验证（测试）
-### 顾老师方面
+## 顾钰老师方面
 
 ### 任务 1 -> 优化网站文档
 
