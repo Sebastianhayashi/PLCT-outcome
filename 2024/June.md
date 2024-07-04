@@ -35,6 +35,7 @@ https://github.com/ruyisdk/docs/pull/59
 2. 新增图片
 3. 使文章更有可读性，对用户阅读友好
 4. 补充旧文档中所缺陷的地方
+5. 重写 config.mts
 ## 席静老师方面
 
 [相关 PR](https://github.com/ruyisdk/docs/pull/52)
