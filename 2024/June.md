@@ -45,5 +45,6 @@ https://github.com/ruyisdk/docs/pull/59
 ### 任务 1 -> RevyOS logo 设计
 
 PR： -> https://github.com/FIFCC/revyos-design/pull/1
+PR： -> https://github.com/FIFCC/revyos-design/pull/2
 
 任务描述：设计并制作出 RevyOS logo。
