@@ -40,3 +40,10 @@ https://github.com/ruyisdk/docs/pull/59
 [相关 PR](https://github.com/ruyisdk/docs/pull/52)
 - 完成 RuyiSDK 官方文档 introduction 模块的修改以及调整
 
+## 程龙灿老师方向
+
+### 任务 1 -> RevyOS logo 设计
+
+PR： -> https://github.com/FIFCC/revyos-design/pull/1
+
+任务描述：设计并制作出 RevyOS logo。
