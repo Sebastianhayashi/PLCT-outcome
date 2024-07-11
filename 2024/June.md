@@ -51,4 +51,4 @@ PR： -> https://github.com/FIFCC/revyos-design/pull/2
 
 ## 任务 2 -> bluez-firmware
 
-任务描述：调研 bluez-firmware 在 RevyOS 的状态。
+任务描述：调研 bluez-firmware 在 RevyOS 的状态，并且找到问题，开启 [issue](https://github.com/revyos/revyos/issues/71)
