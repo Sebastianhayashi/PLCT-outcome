@@ -47,4 +47,6 @@ https://github.com/ruyisdk/docs/pull/59
 PR： -> https://github.com/FIFCC/revyos-design/pull/1
 PR： -> https://github.com/FIFCC/revyos-design/pull/2
 
+## 任务 2 -> bluez-firmware
+
 任务描述：设计并制作出 RevyOS logo。
