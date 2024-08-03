@@ -20,6 +20,7 @@
 - 文档教程计划——测试并编写欧拉 ros/ros2 的基础使用教程（非嵌入式版本）-[产出文档](https://github.com/Sebastianhayashi/openEuler-ROS-Documentation/tree/main/Documentation)
 
 **调研任务**：
-- Gazebo仿真软件在openEuler社区的测试和维护-[产出文档](https://github.com/Sebastianhayashi/Gazebo/blob/main/Gazebo%20%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A.md)
+- Gazebo仿真软件在openEuler社区的测试和维护-[产出文档1](https://github.com/Sebastianhayashi/Gazebo/blob/main/Gazebo%20%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A.md)
+- [产出文档2](https://github.com/Sebastianhayashi/Gazebo/blob/main/Gazebo%20Package%20Report.md)
 
 
