@@ -33,6 +33,8 @@ yuiyuuhayashi@MacBook-Air log_rotation % tree
 - issue1：https://github.com/Sebastianhayashi/eigen/issues/1
 - eigen 库测试结果：https://github.com/Sebastianhayashi/eigen.git
 
+> eigen 库测试耗时两个工作日。
+
 仓库结构：
 
 ```
