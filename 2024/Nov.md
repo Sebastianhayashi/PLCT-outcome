@@ -2,7 +2,7 @@
 
 ## 日志说明会议
 
-https://github.com/Sebastianhayashi/log_rotation
+仓库：https://github.com/Sebastianhayashi/log_rotation
 
 
 ```
@@ -52,3 +52,23 @@ https://github.com/Sebastianhayashi/log_rotation
 ```
 
 > 产出说明：增加部分日志系统测试文件，以及增加会议内容。
+
+## 工具集调研
+
+仓库：https://github.com/Sebastianhayashi/RV-Tools.git
+
+```
+➜  ~ tree RV-Tools
+RV-Tools
+├── README.md
+├── RISmartPorting.md
+├── RISmartPorting_test.md
+├── img
+│   ├── 1.png
+│   └── 2.png
+├── riscv-tests.md
+└── test_log
+    └── oe.log
+
+3 directories, 7 files
+```
