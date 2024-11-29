@@ -21,10 +21,12 @@ No storage could be initialized from the inputs.
 
 ### 问题
 
-- 确定架构以及系统
+- 确定架构以及系统 -> 优先 oe 24.03，x86
   - 没有确定的话就是 lpi4a + revyos
-- 确定 ROS2 版本
-- 建模程度
+- 确定 ROS2 版本 -> humble
+- 建模程度 -> 能建模
+
+
 
 ## 论文分享
 

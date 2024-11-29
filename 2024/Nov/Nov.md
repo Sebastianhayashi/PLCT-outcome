@@ -52,10 +52,22 @@
 ```
 
 > 产出说明：增加部分日志系统测试文件，以及增加会议内容。
+> 上个月 -> 5 directories, 9 files
+> 这个月 -> 12 directories, 28 files
+> 新增 7 个文件夹，19 个文件
+
+## 论文分享
+
+https://github.com/Sebastianhayashi/Paper-Share/tree/main/Maniwhere
+
+## Cartographer
+
+
 
 ## 工具集调研
 
 仓库：https://github.com/Sebastianhayashi/RV-Tools.git
+issue：https://gitee.com/rvsmart-porting/root-cause-analysis/issues/IB53I1
 
 ```
 ➜  ~ tree RV-Tools
