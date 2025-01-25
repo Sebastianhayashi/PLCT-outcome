@@ -5,9 +5,7 @@
 
 ### ros-jazzy 软件包构建
 
-成功构建：
-
-如下图成功构建：528
+如下图**成功构建**：528
 
 ![alt text](./img/Jan-eulermaker.png)
 
@@ -22,10 +20,10 @@
 > 新构建：184
 > 成功安装：59
 
-目前主要存在的问题是，很多包都是因为 eulermaker 无法访问 GitHub，需要手动去镜像仓库以及给对应的 CmakeLsist.txt 打 patch。
+目前主要存在的问题是，很多包都是因为 eulermaker **无法访问** GitHub，需要手动去镜像仓库以及给对应的 CmakeLsist.txt 打 patch。
 对于 turtlesim 而言因为 iceoryx 相关包无法访问 GitHub 而无法正确构建，下一步计划将这些 GitHub 无法访问解决就能启动 turtlesim。
 
-目前核心包只有因为 iceoryx 没有构建成功进而导致 rcl 相关包无法构建，其他核心包如 ament 相关都构建成功。
+目前核心包只有因为 **iceoryx** 没有构建成功进而导致 rcl 相关包无法构建，其他核心包如 ament 相关都构建成功。
 
 ```
 1162
@@ -86,10 +84,26 @@
 
 ### issue
 
-在进行 ros-jazzy 软件包构建时发现两个非 ros 包相关的 issue：
+在进行 ros-jazzy 软件包构建时发现两个**非 ros 包**相关的 issue：
 
 - [GCC 未能生成或打包时省略了 include-fixed](https://github.com/Sebastianhayashi/openEuler-Jazzy-Porting/issues/2)
 - [TBBConfig.cmake 缺失](https://github.com/Sebastianhayashi/openEuler-Jazzy-Porting/issues/3)
+
+### 移植手册
+
+该 ros 官方工具链（rospkg/rosdistro/rosdep/bloom）已经可以**成熟的**在 openeuler 上进行打包工作。
+
+- [rospkg porting](https://github.com/Sebastianhayashi/openEuler-Jazzy-Porting/blob/main/toolchain_porting/01_rospkg_porting.md)
+- [rosdistro and rosdep porting](https://github.com/Sebastianhayashi/openEuler-Jazzy-Porting/blob/main/toolchain_porting/02_rosdep_porting.md)
+
+产出脚本：[auto_generate_openeuler_yaml.py](https://github.com/Sebastianhayashi/openEuler-Jazzy-Porting/blob/main/Scripts/%20auto_generate_openeuler_yaml.py)
+feature：该脚本是用于**补充**官方（rosdistro/rosdep/base.yaml）的 base.yaml 文件中缺少的 openeuler 条目。
+这个脚本的背景是当时在群里有跟韩老师聊过的内容：
+![alt text](./img/chat.png)
+使用说明：
+依赖：PyYAML
+请保证脚本当前目录存在 [base.yaml](https://github.com/Sebastianhayashi/rosdistro/blob/openeuler_init/rosdep/base.yaml)，然后直接执行该脚本就会输出 fail_list.txt 以及 base_openeuler.yaml。
+将 base_openeuler.yaml 加入 rosdep 的源中即可正确识别。
 
 ### EUR 任务
 
@@ -102,6 +116,8 @@
 核心功能：将 gitee 上的仓库都上传到 EUR 中。
 
 使用说明以及源码，请访问[这里](https://github.com/Sebastianhayashi/openEuler-Jazzy-Porting/tree/main/Scripts/EUR/batch_upload_ros)。
+
+> 暂时还没有文字使用报告，目前只是能够实现**自动批量上传仓库**。
 
 
 ## Chatassembler 调研
