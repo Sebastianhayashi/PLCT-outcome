@@ -19,6 +19,16 @@
 
 ![alt text](img/mirror_mapping.png)
 
+新增 rosdep 条目：
+对应 commit，请点击[这里]https://gitee.com/microseyuyu/oe_jazzy_docs/commit/27391847f2ff51dec630437da085ee74a55d3256()
+新增如下：
+
+- python3-deprecated -> python3-deprecated
+- libboost-python -> boost-python3
+- libglew-dev -> glew-devel 
+- libpcl-common -> pcl, pcl-devel
+- sdl2 -> SDL2, SDL2-devel
+
 
 ## ROT 工具功能更新
 
