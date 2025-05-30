@@ -80,8 +80,14 @@ ROT 工具更新功能：
 
 调整工具内一些早期脚本到 legacy，仅保留核心功能。
 
+相关 commit，请查看[这里](https://e.gitee.com/ros-rv/projects/736380/repos/ros-rv/rosopeneulertool/commits/main?start_date=2025-05-01T04%3A00%3A00.000Z&end_date=2025-05-31T04%3A00%3A00.000Z)。
+
 ## 下一步计划 
 
 1. 继续打包
 2. 根据与 oerv 相关的 staff 对接后了解，目前使用的构建工具是 tarsier OBS，与汪洋老师进一步对接了解可以有办法让 eulermaker 的 rv 软件包构建上传日志，但是需要时间。
 3. 将 ROT 工具做最后的功能确定，并且在用户环境下测试并发布
+
+## 其他说明
+
+本月产出大多以 eulermaker 为中心，且大多发生在本地工作流，commit 数量相对少。
