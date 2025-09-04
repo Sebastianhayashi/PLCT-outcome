@@ -55,19 +55,19 @@
  
  这个脚本不仅仅是用来解决 “ros-jazzy” 相关的问题，还有与 openkylin 相关的包命名问题，因为 rosdep 默认走的是 ubuntu 的依赖 key，所以让这个脚本自动筛选出相关的依赖然后人工确定即可。
 
-**bloom_generate.sh**
+[bloom_batch_generate.sh](https://github.com/Sebastianhayashi/ROS-Porting/blob/main/openKylin_Jazzy/tools/deb_build/bloom_batch_generate.sh)
 
 这是整个构建过程中做关键的脚本，类似于 rpm 中的产出 spec 的脚本，而这里对应产出的 `Debian\`，同时 bloom 一样是按照 ubuntu 的格式去产出，所以会导致一个问题就是与 openkylin [规范](https://gitee.com/openkylin/docs/blob/master/04_%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE/%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/openKylin%E6%89%93%E5%8C%85%E6%8C%87%E5%8D%97.md)不符合的问题，所以这个脚本前半段的功能是生成 `Debian\` 构建目录，而后半部分的功能是进行规范化。
 
-**gen_orig.sh**
+[gen_orig.sh](https://github.com/Sebastianhayashi/ROS-Porting/blob/main/openKylin_Jazzy/tools/deb_build/gen-orig.sh)
 
 该脚本是用于自动批量生成 orig.tar.gz，即源码压缩包。
 
-**gen_dsc.sh**
+[gen_dsc.sh](https://github.com/Sebastianhayashi/ROS-Porting/blob/main/openKylin_Jazzy/tools/deb_build/gen-dsc.sh)
 
 该脚本是用于批量自动生成 dsc 文件，即类似于 srpm。
 
-**init_repo.sh**
+[repo-init](https://github.com/Sebastianhayashi/ROS-Porting/blob/main/openKylin_Jazzy/tools/deb_build/repo-init.sh)
 
 该脚本是用于在本地初始化仓库。
 因为本地打包的逻辑是：
@@ -76,7 +76,7 @@
 
 所以需要先在本地建仓。
 
-**auto_build.sh**
+[orchestrate-sbuild-repo.sh](https://github.com/Sebastianhayashi/ROS-Porting/blob/main/openKylin_Jazzy/tools/deb_build/orchestrate-sbuild-repo.sh)
 
 该脚本是用于将 dsc 文件传入 sbuild 的 chroot 中进行自动化构建的脚本。
 
