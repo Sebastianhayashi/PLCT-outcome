@@ -2,13 +2,15 @@
 
 ## 核心结论
 
+```
 base -> rvv 的 phase_delta 显示，在 city10000_1 / city10000_3 上 Jacobian 阶段增幅约 +43.7% ~ +43.9%；总耗时增幅约 +7.35% / +10.79%；linear solver 阶段增幅约 +6.11% / +6.23%；residual 变化很小（-0.39% / +0.13%）。
 
 关闭 GCC 自动向量化后的阶段变化：base -> novec 的 phase_delta 显示，Jacobian 增幅被压到 +15% ~ +19%（示例：city10000_1 jac_pct +18.62%、city10000_3 jac_pct +15.14%），同时 total_pct 约 +5%~+6% 量级。
 
 RVV 相对 base 的主要百分比回退集中在 Jacobian（~+44%）而不是 residual/linear，而且禁用 GCC auto-vectorization 后 Jacobian 回退显著收敛到 +15~+19
+```
 
-所以情况更像是 GCC 在 RVV 目标下对 Jacobian 相关代码做了负向量化/负 SLP，而不是 RVV 依赖栈慢。
+所以目前情况更像是 GCC 在 RVV 目标下对 Jacobian 相关代码做了负向量化/负 SLP，而不是 RVV 依赖栈慢。
 
 目前完成到：hybrid 去把“编译器策略”进一步落到具体 TU/热点路径。
 
